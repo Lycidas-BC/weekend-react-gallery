@@ -11,7 +11,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 ## Plan
 
 # getting ready
-[ ] Look over existing code
+[X] Look over existing code
     [ ] test in postman
 [X] add images to public/images
     [ ] create image objects: id (unique), title, description, path
@@ -25,7 +25,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 [ ] create gallery page
 [ ] components:
     [ ] App
-        [ ] axios to GET data
+        [X] axios to GET data
     [ ] GalleryList
         [ ] import to App
         [ ] pass in data
