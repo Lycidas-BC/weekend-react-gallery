@@ -2,22 +2,22 @@ import React from 'react';
 import axios from 'axios';
 import './App.css';
 import {useState, useEffect} from 'react';
+import Image from '../Image/Image';
 
 function App() {
   const [galleryList, setGalleryList] = useState([]);
 
-  //On load, get guests
+  //On load, load gallery
   useEffect(() => {
-    getGallery()
+    loadGallery()
   }, [])
 
-  const getGallery = () => {
+  const loadGallery = () => {
     axios.get('/gallery')
     .then(response => {
       console.log(response);
       console.log(response.data);
       setGalleryList(response.data);
-      console.log(galleryList);
     })
     .catch(error => {
       alert (`Error getting items from db!`, error);
@@ -31,7 +31,9 @@ function App() {
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
         <p>Gallery goes here</p>
-        <img src="images/goat_small.jpg"/>
+        {galleryList.map(image =>
+                    (<Image key={image.id} image={image} loadGallery={loadGallery}/>)
+                )}
       </div>
     );
 }

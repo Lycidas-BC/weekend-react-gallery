@@ -22,14 +22,30 @@ router.get('/', (req, res) => {
 
 // PUT Route
 router.put('/like/:id', (req, res) => {
-    console.log(req.params);
-    const galleryId = req.params.id;
-    for(const galleryItem of galleryItems) {
-        if(galleryItem.id == galleryId) {
-            galleryItem.likes += 1;
-        }
+    const id = req.params.id;
+    console.log('PUT', id);
+
+    if(id && id !== ""){
+    const sqlText = `
+        UPDATE "images"
+        SET "likes" = ("likes" + 1)
+        WHERE "id" = $1;
+    `;
+    
+    pool.query(sqlText, [id])
+        .then((result) => {
+            console.log(`Updated likes column in table images where id =`, id);
+            res.sendStatus(201);
+        })
+        .catch((error) => {
+            console.log(`Error making database query ${sqlText}`, error);
+            res.sendStatus(500);
+        })
+    } else {
+        res.sendStatus(500).send('no id');
     }
-    res.sendStatus(200);
 }); // END PUT Route
+
+
 
 module.exports = router;
