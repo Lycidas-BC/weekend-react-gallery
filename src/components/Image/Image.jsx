@@ -16,7 +16,20 @@ function Image({image, loadGallery}) {
             alert('Error liking image');
             console.log(err);
           })
-    } //end handleRemove
+    } //end handleLike
+
+    const handleDelete = () => {
+      console.log('deleting image:', image.id);
+      axios.delete(`/gallery/${image.id}`)
+        .then(response => {
+          //Once image has been deleted, refresh gallery
+          loadGallery();
+        })
+        .catch(err => {
+          alert('Error deleting image');
+          console.log(err);
+        })
+  } //end handleDelete
 
     const toggleShowDescription = () => {
         setShowDescription(!showDescription);
@@ -42,6 +55,7 @@ function Image({image, loadGallery}) {
         <div>{image.likes} person likes this</div> :
         <div>{image.likes} people like this</div>
         }
+        <div><button onClick={handleDelete}>Delete</button></div>
         </section>
       </>
     );
