@@ -22,15 +22,15 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 [X] npm install
 
 # base mode
-[ ] create gallery page
-[ ] components:
-    [ ] App
+[X] create gallery page
+[X] components:
+    [X] App
         [X] axios to GET data
     [X] GalleryList
         [X] import to App
         [X] pass in data
         [X] iterate over data, creating gallery items
-    [ ] GalleryItem
+    [X] GalleryItem
         [X] import to GalleryList
         [X] pass in data for individual items
         [X] display pictures
@@ -44,10 +44,10 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 # stretch
 [ ] separate branch for each feature
     [ ] merge it into master with `git merge --no-ff`
-[ ] form that allows user to post a new item
-    [ ] client side 
-    [ ] server side route
-    [ ] image upload??
-[ ] ability to delete gallery item
+[X] form that allows user to post a new item
+    [X] client side 
+    [X] server side route
+    [too complicated] image upload??
+[X] ability to delete gallery item
 [ ] add styling with Material-UI [https://material-ui.com/](https://material-ui.com/)
 [ ] uppy for image upload [uppy](https://uppy.io/)
