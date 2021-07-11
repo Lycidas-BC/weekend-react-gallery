@@ -1,0 +1,18 @@
+div {
+    margin: 10px;
+    text-align: left;
+    width: 100%;
+}
+form {
+    width: 500px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+section {
+    width: 20%;
+}
+
+input {
+    width: 100%;
+}
