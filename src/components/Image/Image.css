@@ -1,0 +1,45 @@
+.imageContainer{
+    border: 1px solid black;
+    float: left;
+    margin: 20px;
+    padding: 16px;
+    text-align: center;
+}
+
+.image {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.imageWithDescription {
+    max-width: 200px;
+    max-height: 200px;
+    opacity: .25;
+    filter:
+        blur(5px)
+        brightness(0.4)
+        contrast(200%)
+        sepia(100%)
+        saturate(300%)
+        hue-rotate(180deg);
+}
+
+.descriptionContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-shadow:
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white;
+    font-weight: bolder;
+}
