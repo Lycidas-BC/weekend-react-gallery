@@ -46,6 +46,19 @@ router.put('/like/:id', (req, res) => {
     }
 }); // END PUT Route
 
+//POST route
+router.post('/', (req, res) =>{
+    let newImage = req.body;
+    let queryText = `INSERT INTO "images" ("name", "path", "description")
+    VALUES ($1, $2, $3);`;
 
+    pool.query(queryText, [newImage.name, newImage.path, newImage.description])
+    .then(result => {
+        res.sendStatus(201);
+    }).catch(err => {
+        console.log(`Error adding image with query ${queryText}`, err);
+        res.sendStatus(500);
+    })
+});
 
 module.exports = router;
