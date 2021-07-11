@@ -28,7 +28,7 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <p>Gallery goes here</p>
+        <h3>Gallery</h3>
         {galleryList.map(image =>
                     (<Image key={image.id} image={image} loadGallery={loadGallery}/>)
                 )}

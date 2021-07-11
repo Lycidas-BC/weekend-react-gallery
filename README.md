@@ -47,6 +47,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 [ ] form that allows user to post a new item
     [ ] client side 
     [ ] server side route
+    [ ] image upload??
 [ ] ability to delete gallery item
 [ ] add styling with Material-UI [https://material-ui.com/](https://material-ui.com/)
 [ ] uppy for image upload [uppy](https://uppy.io/)
