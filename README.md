@@ -22,9 +22,9 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 [X] npm install
 
 # base mode
-[ ] create gallery page
-[ ] components:
-    [ ] App
+[X] create gallery page
+[X] components:
+    [X] App
         [X] axios to GET data
     [X] GalleryList
         [X] import to App
@@ -48,6 +48,6 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
     [X] client side 
     [X] server side route
     [too complicated] image upload??
-[ ] ability to delete gallery item
+[X] ability to delete gallery item
 [ ] add styling with Material-UI [https://material-ui.com/](https://material-ui.com/)
 [ ] uppy for image upload [uppy](https://uppy.io/)
