@@ -27,7 +27,8 @@ function App() {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Gallery of My Life</h1>
+          <h1 className={"App-title"} style={{textDecoration: "line-through double"}}>Gallery of My Life</h1>
+          <h1 className={"App-title"} style={{textDecoration: "underline overline double"}}>Film History Gallery</h1>
         </header>
         <AddImageForm loadGallery={loadGallery}/>
         <h3>Gallery</h3>

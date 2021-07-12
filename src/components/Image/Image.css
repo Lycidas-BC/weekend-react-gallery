@@ -16,14 +16,10 @@
 .imageWithDescription {
     max-width: 200px;
     max-height: 200px;
-    opacity: .25;
+    opacity: .7;
     filter:
-        blur(5px)
-        brightness(0.4)
-        contrast(200%)
-        sepia(100%)
-        saturate(300%)
-        hue-rotate(180deg);
+        blur(2px)
+        brightness(0.4);
 }
 
 .descriptionContainer {
@@ -38,7 +34,7 @@
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(180, 179, 179);
+    color: black;
     text-shadow:
         -1px -1px 0 white,
         1px -1px 0 white,
