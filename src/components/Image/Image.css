@@ -1,5 +1,6 @@
 .imageContainer{
     width: 200px;
+    height: 350px;
     border: 1px solid black;
     float: left;
     margin: 20px;
@@ -29,14 +30,15 @@
     position: relative;
     text-align: center;
     color: white;
+    width: 190px;
 }
 
 .description {
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: rgb(180, 179, 179);
     text-shadow:
         -1px -1px 0 white,
         1px -1px 0 white,
